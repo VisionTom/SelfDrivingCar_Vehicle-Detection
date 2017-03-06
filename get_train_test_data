@@ -1,0 +1,15 @@
+rmdir train_test_data
+echo 'removed folder train_test_data'
+mkdir train_test_data
+echo 'created train_test_data'
+cd train_test_data
+wget https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip
+echo 'downloaded vehicle dataset'
+wget https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip
+echo 'downloaded non-vehicle dataset'
+unzip vehicles.zip
+echo 'unzipped vehicles.zip'
+rm vehicles.zip
+unzip non-vehicles.zip
+echo 'unzipped non-vehicles.zip'
+rm non-vehicles.zip
